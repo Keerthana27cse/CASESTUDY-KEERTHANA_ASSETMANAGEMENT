@@ -1,0 +1,45 @@
+
+services:
+  mysql-db:
+    image: mysql:8.0
+    container_name: mysql-db
+    ports:
+      - "3307:3306"   # 👈 Host port changed to avoid conflict
+    environment:
+      MYSQL_ROOT_PASSWORD: Qwerty
+      MYSQL_DATABASE: assetmanagementdb
+    volumes:
+      - mysql-data:/var/lib/mysql
+    networks:
+      - casestudy
+
+  backend:
+    build:
+      context: ./assetmanagement
+    container_name: asset-backend
+    ports:
+      - "8081:8081"
+    depends_on:
+      - mysql-db
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql-db:3306/assetmanagementdb
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: Qwerty
+    networks:
+      - casestudy
+
+  frontend:
+    build:
+      context: ./my-react-app
+    container_name: asset-frontend
+    ports:
+      - "3000:80"
+    networks:
+      - casestudy
+
+volumes:
+  mysql-data:
+
+networks:
+  casestudy:
+    driver: bridge
