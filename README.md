@@ -1,105 +1,79 @@
-# Asset Management System
+# 🛠️ Asset Management System
 
-## Overview
-This project is an Asset Management System built using:
-- **Backend:** Java Spring Boot with Maven
-- **Frontend:** React.js
-- **Database:** MySQL
-- **Authentication:** JWT
+## 🚀 Overview
+This Asset Management System enables employees to manage organization assets while providing administrators with tools to approve requests and conduct audits. Built with a robust backend using **Spring Boot**, a responsive **React.js** frontend, and secure authentication via **JWT**, this system balances functionality with user experience.
 
-It allows employees to manage assets, raise requests, and admins to approve and audit assets.
-
----
-
-## Features
-- Employee registration and authentication
-- Asset catalogue with add, edit, delete functionality
-- Asset borrowing and return requests
-- Service and audit request management
-- Role-based access control (Employee/Admin)
-- Responsive UI with React and Bootstrap
+### 🔧 Tech Stack
+- **Backend**: Java Spring Boot with Maven  
+- **Frontend**: React.js with Bootstrap  
+- **Database**: MySQL  
+- **Authentication**: JWT  
 
 ---
 
-## Prerequisites
-- Java 11 or higher
-- Maven 3.6+
-- Node.js and npm (for React frontend)
-- MySQL Server
+## ✨ Features
+- 🔐 Employee registration and secure JWT authentication  
+- 📦 Asset catalog: add, edit, delete functionality  
+- 📋 Asset borrowing and return request workflow  
+- 🛠️ Service and audit request management  
+- 🧑‍💼 Role-based access (Admin/Employee)  
+- 📱 Responsive UI design  
 
 ---
 
-## Setup Instructions
+## 📌 Prerequisites
+Ensure the following are installed:
+- Java 11 or higher  
+- Maven 3.6+  
+- Node.js and npm  
+- MySQL Server  
 
-### Backend
-1. Clone the repo:
+---
+
+## ⚙️ Setup Instructions
+
+### 🧩 Backend Setup
+1. Clone the repository:  
    ```bash
    git clone https://github.com/Keerthana27cse/CASESTUDY-KEERTHANA_ASSETMANAGEMENT.git
-
-
- Asset Management System
-
-## Overview
-This project is an Asset Management System with a Spring Boot backend and React frontend. It supports managing assets, user registration, requests, and admin approvals.
-
----
-
-## Setup Instructions
-
-### Backend
-1. Navigate to backend directory:
+   ```
+2. Navigate to the backend folder:  
    ```bash
    cd assetmanagement
-Configure database settings in application.properties
+   ```
+3. Configure database credentials in `application.properties`.
 
-Build and run Spring Boot app:
-
-bash
-Copy
-Edit
-mvn clean install
-mvn spring-boot:run
-Frontend
-Navigate to React app folder:
-
-bash
-Copy
-Edit
-cd my-react-app
-Install dependencies:
-
-bash
-Copy
-Edit
-npm install
-Start React development server:
-
-bash
-Copy
-Edit
-npm start
-Usage
-Access the frontend at http://localhost:3000
-
-Backend API runs on http://localhost:8080
-
-Register users and manage assets through the UI
-
-Contributing
-Feel free to fork and create pull requests. Please follow coding standards and write descriptive commit messages.
-
-License
-MIT License
-
-Contact
-For questions or support, contact [Your Name] at [your.email@example.com].
-
-yaml
-Copy
-Edit
+4. Build and run the Spring Boot application:  
+   ```bash
+   mvn clean install
+   mvn spring-boot:run
+   ```
 
 ---
 
-You can save this as `README.md` in your project root.
+### 🎨 Frontend Setup
+1. Navigate to the React frontend directory:  
+   ```bash
+   cd my-react-app
+   ```
+2. Install dependencies:  
+   ```bash
+   npm install
+   ```
+3. Start the development server:  
+   ```bash
+   npm start
+   ```
 
-If you want me to add more sections or customize it, just ask!
+---
+
+## 🌐 Usage
+- Access the frontend via: `http://localhost:3000`  
+- Backend APIs run on: `http://localhost:8080`  
+- Use the UI to register users, assign roles, and manage asset workflows  
+
+---
+
+## 📬 Contact
+For questions, suggestions, or support, contact **Keerthana** at [kitcbe.25.21bcs022@gmail.com].
+
